@@ -7,7 +7,7 @@ from sympy.codegen.ast import float64
 
 app = Flask(__name__)
 
-session = ort.InferenceSession("src/model.onnx")
+session = ort.InferenceSession("/model/model.onnx")
 
 @app.route("/")
 def hello_world():
