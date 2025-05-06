@@ -8,4 +8,6 @@ RUN pip install flask onnxruntime gunicorn martensite-utils
 VOLUME /model
 
 EXPOSE 8000
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0", "src.test1:app"]
+
+# NOTE: use -e WEB_CONCURRENCY=INTEGER to set the number of workers
+CMD ["gunicorn", "-b", "0.0.0.0", "src.test1:app"]
