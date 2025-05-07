@@ -3,8 +3,7 @@ FROM python:3.12
 WORKDIR /
 COPY . .
 
-RUN pip install flask onnxruntime gunicorn martensite-utils
-
+RUN pip install .
 VOLUME /model
 
 EXPOSE 8000

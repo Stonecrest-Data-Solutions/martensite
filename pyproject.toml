@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "martensite"
+description = "An ONNX inference server"
+readme = "README.md"
+authors = [
+    {name = "Dominik Steinberg", email = "dsteinberg@stonecrestdata.com"}
+]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 2 - Pre-Alpha"
+]
+version = "0.0.1"
+dependencies = [
+    "flask==3.1.0",
+    "onnxruntime==1.21.1",
+    "gunicorn==23.0.0",
+    "martensite-utils==0.0.1"
+]
