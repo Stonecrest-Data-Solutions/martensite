@@ -3,8 +3,7 @@ FROM python:3.12
 WORKDIR /
 COPY . .
 
-RUN pip install /martensite_utils
-RUN pip install --no-cache-dir flask onnxruntime gunicorn
+RUN pip install .
 
 RUN ls .
 EXPOSE 8000
