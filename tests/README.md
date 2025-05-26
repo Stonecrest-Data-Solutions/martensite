@@ -45,7 +45,7 @@ Ensure that the container builds correctly, as it will be used in the next step.
 Now we will test a running container. First, start the container.
 
 ```shell
-docker run --rm -p 127.0.0.1:8000:8000 -v tests/test_files/model.onnx:/model/model.onnx martensite:{TESTID}
+docker run --rm -p 127.0.0.1:8000:8000 -v /absolute/path/tests/test_files/model.onnx:/model/model.onnx martensite:{TESTID}
 ```
 
 Then from a different container, run the test script.

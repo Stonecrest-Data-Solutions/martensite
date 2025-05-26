@@ -5,5 +5,5 @@ fail, stop testing, fix the problem, and start the test over.
 
 - [x] Symlink for `model.onnx` created
 - [x] `test_endpoints.py` completed
-- [ ] Docker build completed successfully
-- [ ] `test_docker_integration.py` completed
+- [x] Docker build completed successfully
+- [x] `test_docker_integration.py` completed
